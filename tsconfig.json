@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "noImplicitAny": true,
+        "outDir": "built",
+        "rootDir": ".",
+        "sourceMap": false
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "files": [
+        "./decorators/decorators.ts",
+        "./vue/vue-tests.ts",
+        "./vue/vue.d.ts",
+        "./vue-class-component/vue-class-component.d.ts",
+        "./vue-resource/vue-resource-tests.ts",
+        "./vue-resource/vue-resource.d.ts",
+        "./vue-router/vue-router-tests.ts",
+        "./vue-router/vue-router.d.ts"
+    ]
+}
