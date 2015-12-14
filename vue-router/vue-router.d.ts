@@ -63,11 +63,11 @@ declare namespace VueRouter {
 	}
 	
 	interface TransitionHook<Root, FP, FQ, TP, TQ> {
-		data?(transition?: Transition<Root, FP, FQ, TP, TQ>): Promise<any> | void;
-		activate?(transition?: Transition<Root, FP, FQ, TP, TQ>): Promise<any> | void;
-		deactivate?(transition?: Transition<Root, FP, FQ, TP, TQ>): Promise<any> | void;
-		canActivate?(transition?: Transition<Root, FP, FQ, TP, TQ>): Promise<any> | boolean | void;
-		canDeactivate?(transition?: Transition<Root, FP, FQ, TP, TQ>): Promise<any> | boolean | void;
+		data?(transition?: Transition<Root, FP, FQ, TP, TQ>): Thenable<any> | void;
+		activate?(transition?: Transition<Root, FP, FQ, TP, TQ>): Thenable<any> | void;
+		deactivate?(transition?: Transition<Root, FP, FQ, TP, TQ>): Thenable<any> | void;
+		canActivate?(transition?: Transition<Root, FP, FQ, TP, TQ>): Thenable<any> | boolean | void;
+		canDeactivate?(transition?: Transition<Root, FP, FQ, TP, TQ>): Thenable<any> | boolean | void;
 		canReuse?: boolean | ((transition: Transition<Root, FP, FQ, TP, TQ>) => boolean);
 	}
 }
